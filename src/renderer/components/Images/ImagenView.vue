@@ -2,7 +2,7 @@
 <!-- <el-row>
   <el-col  > -->
     <el-card class="elemt">
-      <el-image height="100%" width="100%" :src="image" class="image"></el-image>
+      <el-image height="140%" width="140%" :src="image" class="image"></el-image>
     </el-card>
   <!-- </el-col>
 </el-row> -->
@@ -13,7 +13,7 @@
   
     data() {
       var img 
-     console.log(fs.statSync(`${__dirname}/img/${this.$attrs.data}`).isFile())
+     console.log(this.$route)
       try {
       
       if(fs.statSync(`${__dirname}/img/${this.$attrs.data}`).isFile()){
@@ -42,7 +42,7 @@
 </script>
 <style>
    .elemt{
-     height: 130px;
+     height: 230px;
      width: 190px
    }
 </style>
